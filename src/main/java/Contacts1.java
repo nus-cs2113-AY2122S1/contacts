@@ -487,7 +487,7 @@ public class Contacts1 {
                 extractEmailFromPersonString(encoded)
         );
         // check that the constructed person is valid
-        return isPersonDataValid(decodedPerson) ? decodedPerson : null;
+        return  isPersonDataValid(decodedPerson) ? decodedPerson : null;
     }
 
 
