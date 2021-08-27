@@ -128,7 +128,7 @@ public class Contacts1 {
      * ====================================================================
      */
 
-    /**
+    /** <- this is what we call as a Javadoc
      * Main entry point of the application.
      * Initializes the application and starts the interaction with the user.
      */
