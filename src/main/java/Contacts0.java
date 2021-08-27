@@ -3,6 +3,9 @@ import java.util.Scanner;
 
 public class Contacts0 {
 
+    public static final int MAX_LENGTH = 100;
+    public static final String CONSOLE_WALL = "|| ";
+
     public static void main(String[] args) {
         final Scanner SCANNER = new Scanner(System.in);
         System.out.println("|| ===================================================");
@@ -10,10 +13,10 @@ public class Contacts0 {
         System.out.println("|| Contacts - Version 0.0");
         System.out.println("|| Welcome to Contacts!");
         System.out.println("|| ===================================================");
-        String[][] list = new String[100][3];
+        String[][] list = new String[MAX_LENGTH][3];
         int count = 0;
         while (true) {
-            System.out.print("|| " + "Enter command: ");
+            System.out.print(CONSOLE_WALL + "Enter command: ");
             String inputLine = SCANNER.nextLine();
             while (inputLine.trim().isEmpty() || inputLine.trim().charAt(0) == '#') {
                 inputLine = SCANNER.nextLine();
