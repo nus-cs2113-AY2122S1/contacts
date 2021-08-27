@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-
+// Messy
 public class Contacts0 {
 
     public static void main(String[] args) {

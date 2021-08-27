@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-
+// Less Messy but not OOP!
 /**
  * This class is used to maintain a list of person data which are saved
  * in a text file.
