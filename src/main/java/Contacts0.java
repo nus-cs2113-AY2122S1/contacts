@@ -8,8 +8,7 @@ public class Contacts0 {
     public static void main(String[] args) {
         final Scanner SCANNER = new Scanner(System.in);
         giveIntroduction();
-        final int MAX = 100;
-        String[][] list = new String[MAX][3];
+        String[][] list = new String[100][3];
         int count = 0;
         while (true) {
             System.out.print(SYMBOL_SEPARATOR + "Enter command: ");
@@ -91,7 +90,7 @@ public class Contacts0 {
                 feedback = String.format("%1$d persons found!", count);
                 break;
             case "clear":
-                list = new String[MAX][3];
+                list = new String[100][3];
                 count = 0;
                 feedback = "Contacts have been cleared!";
                 break;
