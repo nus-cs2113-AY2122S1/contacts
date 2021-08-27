@@ -3,17 +3,16 @@ import java.util.Scanner;
 
 public class Contacts0 {
 
+    public static final String SYMBOL_SEPARATOR = "|| ";
+
     public static void main(String[] args) {
         final Scanner SCANNER = new Scanner(System.in);
-        System.out.println("|| ===================================================");
-        System.out.println("|| ===================================================");
-        System.out.println("|| Contacts - Version 0.0");
-        System.out.println("|| Welcome to Contacts!");
-        System.out.println("|| ===================================================");
-        String[][] list = new String[100][3];
+        giveIntroduction();
+        final int MAX = 100;
+        String[][] list = new String[MAX][3];
         int count = 0;
         while (true) {
-            System.out.print("|| " + "Enter command: ");
+            System.out.print(SYMBOL_SEPARATOR + "Enter command: ");
             String inputLine = SCANNER.nextLine();
             while (inputLine.trim().isEmpty() || inputLine.trim().charAt(0) == '#') {
                 inputLine = SCANNER.nextLine();
@@ -92,7 +91,7 @@ public class Contacts0 {
                 feedback = String.format("%1$d persons found!", count);
                 break;
             case "clear":
-                list = new String[100][3];
+                list = new String[MAX][3];
                 count = 0;
                 feedback = "Contacts have been cleared!";
                 break;
@@ -144,6 +143,14 @@ public class Contacts0 {
                 System.out.println("|| " + m);
             }
         }
+    }
+
+    private static void giveIntroduction() {
+        System.out.println("|| ===================================================");
+        System.out.println("|| ===================================================");
+        System.out.println("|| Contacts - Version 1.0");
+        System.out.println("|| Welcome to Contacts!");
+        System.out.println("|| ===================================================");
     }
 
 }
