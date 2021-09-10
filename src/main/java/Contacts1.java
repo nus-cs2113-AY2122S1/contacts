@@ -595,6 +595,7 @@ public class Contacts1 {
     private static boolean isValidPhone(String phone) {
         return !phone.isEmpty();
         //TODO: implement a better validation
+
     }
 
     /**
