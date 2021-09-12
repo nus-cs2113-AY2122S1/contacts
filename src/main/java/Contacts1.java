@@ -140,6 +140,7 @@ public class Contacts1 {
             echoUserCommand(userCommand);
             String feedback = executeCommand(userCommand);
             showResultToUser(feedback);
+            System.out.println("hi");
         }
     }
 
