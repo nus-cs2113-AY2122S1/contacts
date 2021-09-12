@@ -150,6 +150,7 @@ public class Contacts0 {
         System.out.println("|| Contacts - Version 1.0");
         System.out.println("|| Welcome to Contacts!");
         System.out.println("|| ===================================================");
+        System.out.println("|| ===================================================");
     }
 
 }
